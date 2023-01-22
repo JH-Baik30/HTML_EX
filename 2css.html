@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>WEB1 - CSS</title>
     <meta charset="utf-8">
+    <style>
+        body{
+            margin: 0px;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 45px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0px;
+            padding: 20px;
+        }
+        ol {
+            border-right: 1px solid gray;
+            width: 100px;
+            margin: 0px;
+            padding: 20px;
+        }        
+        #grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #grid ol {
+            padding: 32px;
+        }
+        #article {
+            padding-left: 25px;
+        }
+        @media (width < 600px) {
+            #grid {
+                display: block;
+            }
+            ol {
+                border-right: none;                
+            }
+            h1 {
+                border-bottom: none;
+            }        
+        }
+    </style>
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
     <ol>
-        <li><a href="1html.html">HTML</a></li>
-        <li><a href="2css.html">CSS</a></li>
+        <li><a href="1html.html" class="saw">HTML</a></li>
+        <li><a href="2css.html" class="saw" id="active">CSS</a></li>
         <li><a href="3javascript.html">JavaScript</a></li>
     </ol>
 
@@ -18,8 +60,8 @@
     <p><a href="https://en.wikipedia.org/wiki/CSS" target="_blank" title="CSS">
             Cascading Style Sheets (CSS)</a> is a style sheet language used for describing
         the presentation of a document written in a markup language such as HTML or
-        XML (including XML dialects such as SVG, MathML or XHTML).[1] CSS is a cornerstone
-        technology of the World Wide Web, alongside HTML and JavaScript.[2]
+        XML (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone
+        technology of the World Wide Web, alongside HTML and JavaScript.
     </p>
 
     <p>
